@@ -1,0 +1,156 @@
+{
+	"info": {
+		"_postman_id": "b5ef2ede-ca53-43fa-b914-14552e3b1d0c",
+		"name": "Ninjas",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Ninjas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "127.0.0.1:3000/api/ninjas",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"ninjas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create a ninja",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Raku\",\n\t\"rank\": \"5\",\n\t\"available\": true\n}"
+				},
+				"url": {
+					"raw": "127.0.0.1:3000/api/ninjas",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"ninjas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get a Ninja",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "127.0.0.1:3000/api/ninjas/5c9b955ece9a3e2470cfc4e0",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"ninjas",
+						"5c9b955ece9a3e2470cfc4e0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update a Ninja",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"available\": false,\n    \"name\": \"Raku\",\n    \"rank\": \"15\"\n}"
+				},
+				"url": {
+					"raw": "127.0.0.1:3000/api/ninjas/5c9b955ece9a3e2470cfc4e0",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"ninjas",
+						"5c9b955ece9a3e2470cfc4e0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete a Ninja",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "127.0.0.1:3000/api/ninjas/5c9b955ece9a3e2470cfc4e0",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"ninjas",
+						"5c9b955ece9a3e2470cfc4e0"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
